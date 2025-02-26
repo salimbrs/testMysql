@@ -31,7 +31,7 @@ namespace part2
                 MySqlDataAdapter da = new MySqlDataAdapter(query, con);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
-                dataGridView1.DataSource = ds.Tables[0]; // Filtrelenmiş veriyi tabloya yükle
+                dataGridView1.DataSource = ds.Tables[0]; // verinin tabloya yüklendiği yer
             }
             catch (Exception ex)
             {
@@ -52,7 +52,7 @@ namespace part2
                 MySqlDataAdapter da = new MySqlDataAdapter(query, con);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
-                dataGridView1.DataSource = ds.Tables[0]; // Filtrelenmiş veriyi tabloya yükle
+                dataGridView1.DataSource = ds.Tables[0]; 
             }
             catch (Exception ex)
             {
